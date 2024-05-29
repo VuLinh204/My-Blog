@@ -8,5 +8,5 @@
 
 .active{
   background-color: var(--text);
-  color: var(--bg);
+  color: var(--white);
 }

@@ -33,7 +33,7 @@
 
 .button:first-child{
   background-color: var(--btn);
-  color: var(--text);
+  color: var(--white);
 }
 
 .brands{

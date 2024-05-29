@@ -5,9 +5,15 @@
 }
 
 .logout {
-  padding: 10px;
+  padding: 10px 20px;
   cursor: pointer;
+  border-radius: 20px;
+  border: none;
   font-weight: bold;
+}
+
+.login {
+  background-color: var(--btn);
 }
 
 .menuButton,

@@ -7,17 +7,21 @@
 
 .form input{
   padding: 20px;
-  background-color: var(--bg);
-  color: var(--textColor);
+  background-color: var(--btn);
+  color: var(--white);
   border: none;
   border-radius: 5px;
+}
+
+.form input::placeholder {
+  color: var(--white);
 }
 
 .form button{
   padding: 20px;
   cursor: pointer;
   background-color: var(--btn);
-  color: var(--textColor);
+  color: var(--white);
   font-weight: bold;
   border: none;
   border-radius: 5px;
