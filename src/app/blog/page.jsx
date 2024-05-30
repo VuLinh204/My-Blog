@@ -1,35 +1,35 @@
-import PostCard from "@/components/postCard/postCard";
-import styles from "./blog.module.css";
-import { getPosts } from "@/lib/data";
-
-// FETCH DATA WITH AN API
-// const getData = async () => {
-//   const res = await fetch("http://localhost:3000/api/blog", {next:{revalidate:3600}});
-
-//   if (!res.ok) {
-//     throw new Error("Something went wrong");
-//   }
-
-//   return res.json();
-// };
+import PostCard from '@/components/postCard/postCard';
+import styles from './blog.module.css';
+import { getPosts } from '@/lib/data';
+import Slider from '@/components/slider/slider';
+import React from 'react';
+import ScrollEffect from '@/components/scrollEffect/scrollEffect';
 
 const BlogPage = async () => {
+    const posts = await getPosts();
 
-  // FETCH DATA WITH AN API
-  // const posts = await getData();
-
-  // FETCH DATA WITHOUT AN API
-  const posts = await getPosts();
-
-  return (
-    <div className={styles.container}>
-      {posts.map((post) => (
-        <div className={styles.post} key={post.id}>
-          <PostCard post={post} />
+    return (
+        <div className={styles.container}>
+            {posts.map((post, index) => (
+                <React.Fragment key={post.id}>
+                    <div className={styles.post}>
+                        <PostCard post={post} />
+                    </div>
+                    {(index + 1) % 6 === 0 && (
+                        <div className={styles.scrollEffect}>
+                            <ScrollEffect />
+                        </div>
+                    )}
+                </React.Fragment>
+            ))}
+            <div className={styles.icon_scroll}>
+                <img src="/scroll-bottom.png" alt="scroll-bottom" />
+            </div>
+            <div className={styles.slider}>
+                <Slider />
+            </div>
         </div>
-      ))}
-    </div>
-  );
+    );
 };
 
 export default BlogPage;

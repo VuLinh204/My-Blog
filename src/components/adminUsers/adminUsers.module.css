@@ -13,9 +13,9 @@
 }
 
 .userButton{
-  padding: 5px 10px;
+  padding: 10px 20px;
   background-color: rgba(220, 20, 60, 0.593);
-  color: var(--textColor);
+  color: var(--white);
   border-radius: 5px;
   border: none;
   cursor: pointer;

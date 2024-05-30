@@ -1,0 +1,37 @@
+.container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .sliders {
+    display: flex;
+    width: calc(100% * 6); /* 6 slides, adjust the number as per slides */
+    animation: slide 40s linear infinite;
+  }
+  
+  .slide {
+    padding: 80px 40px;
+    width: calc(100% / 6); /* Divide container equally among slides */
+    flex-shrink: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    height: 800px; /* Set a fixed height for images */
+    width: 100%; /* Let the width adjust automatically to maintain aspect ratio */
+    display: block;
+    overflow: hidden;
+    border-radius: 40px;
+  }
+  
+  .slide:hover {
+    transform: scale(1.1);
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  

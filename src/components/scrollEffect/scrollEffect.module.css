@@ -1,0 +1,32 @@
+.container {
+    position: relative;
+    margin: 20px 0;
+}
+
+.content {
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scrollIndicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    background-color: var(--btn);
+    width: 90%;
+    transition: width 0.3s ease;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 10px 0;
+    }
+
+    .scrollIndicator {
+        height: 3px;
+    }
+}
