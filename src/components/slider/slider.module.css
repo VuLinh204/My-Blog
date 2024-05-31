@@ -19,8 +19,8 @@
 }
 
 .slide img {
-    height: 800px; /* Set a fixed height for images */
-    width: 100%; /* Let the width adjust automatically to maintain aspect ratio */
+    height: auto; 
+    width: 100%; 
     display: block;
     overflow: hidden;
     border-radius: 40px;

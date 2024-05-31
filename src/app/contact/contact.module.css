@@ -1,56 +1,51 @@
 .container {
-  display: flex;
-  align-items: center;
-  gap: 100px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
 }
 
 .imgContainer {
-  flex: 1;
-  height: 500px;
-  position: relative;
+    flex: 1;
+    height: 500px;
+    position: relative;
 }
 
 .img {
-  object-fit: contain;
+    object-fit: contain;
 }
 
 .formContainer {
-  flex: 1;
+    flex: 1;
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .form input,
 .form textarea {
-  padding: 20px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  background-color: var(--textSoft);
-  color: var(--bgSoft);
-}
-
-.form input::placeholder,
-.form textarea::placeholder {
-  color: var(--bg);
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--bgSoft);
+    color: var(--text);
 }
 
 .form button {
-  padding: 20px;
-  background-color: var(--btn);
-  color: var(--white);
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    padding: 20px;
+    background-color: var(--btn);
+    color: var(--white);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+    .container {
+        flex-direction: column;
+    }
 }

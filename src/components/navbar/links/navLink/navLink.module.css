@@ -1,12 +1,99 @@
-.container{
-  min-width: 100px;
-  padding: 10px;
-  border-radius: 20px;
-  font-weight: 500;
-  text-align: center;
+.linkContainer {
+    position: relative;
 }
 
-.active{
-  background-color: var(--text);
-  color: var(--white);
+.container {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.overlayEffect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    animation: slideDown 0.3s ease-out, fadeOut 0.3s 0.6s ease-out forwards;
+}
+
+.overlayContent {
+    color: var(--text);
+    font-size: 48px;
+    opacity: 0;
+    animation: fadeInText 0.3s 0.3s forwards;
+}
+
+.overlayEnd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 9998;
+    opacity: 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    animation: slideUp 0.4s 0.6s ease-out forwards, fadeInOverlay 0.3s 0.6s ease-out forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+      opacity: 0;
+        top: 0;
+    }
+    100% {
+      opacity: 1;
+        top: 100%;
+    }
+}
+
+@keyframes fadeInOverlay {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

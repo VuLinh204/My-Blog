@@ -7,14 +7,10 @@
 
 .form input{
   padding: 20px;
-  background-color: var(--btn);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--text);
   border: none;
   border-radius: 5px;
-}
-
-.form input::placeholder {
-  color: var(--white);
 }
 
 .form button{
