@@ -1,0 +1,52 @@
+/* PenOnPaperAnimation.module.css */
+
+.paper {
+    position: relative;
+    width: 25em;
+    height: 26em;
+    border-radius: 35px;
+}
+
+.penAnimation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.penIcon {
+    position: absolute;
+    margin-top: 9em;
+    width: 50px;
+    height: auto;
+    animation: penWrite 4s cubic-bezier(0,1,1,-0.01) infinite;
+}
+
+@keyframes penWrite {
+    0% {
+        transform: translateY(-10px) translateX(-765%);
+    }
+    25% {
+        transform: translateY(10px) translateX(-645%);
+    }
+    50% {
+        transform: translateY(-10px) translateX(-515%);
+    }
+     75% {  
+        transform: translateY(10px) translateX(-390%);
+    }
+    100% {
+        transform: translateY(-10px) translateX(-235%);
+    }
+}
+
+.textOverlay {
+    position: absolute;
+    top: 40%;
+    left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+    color: black;
+    padding: 5px;
+  }
