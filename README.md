@@ -23,4 +23,4 @@ Tính năng Middleware: Next.js 14 giới thiệu tính năng Middleware, cho ph
 
 Tính năng Next.js Learn: Next.js 14 giới thiệu một khóa học mới, Next.js Learn, để học cách sử dụng App Router, xác thực người dùng, làm việc với cơ sở dữ liệu và thêm nhiều tính năng khác.
 
-Tóm lại, Next.js 14 cung cấp một số tính năng và cải tiến mới để giúp bạn tạo ra các trang web nhanh hơn, dễ quản lý hơn và tương tác hơn.
+Tóm lại, Next.js 14 cung cấp một số tính năng và cải tiến mới để giúp bạn tạo ra các trang web nhanh hơn, dễ quản lý hơn và tương tác hơn.s
