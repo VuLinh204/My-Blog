@@ -1,4 +1,10 @@
+copy file .env.example sửa thành .env
 
+npm i
+
+npm install react-type-animation
+
+npm install aos
 
 
 ##############################################

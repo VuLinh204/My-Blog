@@ -5,7 +5,7 @@ import AdminPostForm from '@/components/adminPostForm/adminPostForm';
 import AdminUsers from '@/components/adminUsers/adminUsers';
 import AdminUserForm from '@/components/adminUserForm/adminUserForm';
 import { auth } from '@/lib/auth';
-import ScrollToTopButton from '@/components/ScrollToTopButton/ScrollToTopButton';
+import ScrollToTopButton from '@/components/scrollToTopButton/scrollToTopButton';
 
 const AdminPage = async () => {
     const session = await auth();
