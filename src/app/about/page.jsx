@@ -8,6 +8,7 @@ import VisibilitySensor from "react-visibility-sensor";
 import CountUp from "react-countup";
 import styles from "./about.module.css";
 import "aos/dist/aos.css";
+import ScrollToTopButton from '@/components/ScrollToTopButton/ScrollToTopButton';
 
 const AboutPage = () => {
 
@@ -30,7 +31,17 @@ const AboutPage = () => {
             best consulting & finance solution provider. Wide range of web and software development services.
           </p>
 
-
+          <div className={styles.about}>
+            <a className="" href="#">
+              <button
+                id="CTA-button"
+                data-aos="fade-down"
+                className={styles.register}
+              >
+                Register Here
+              </button>
+            </a>
+          </div>
         </div>
 
         <div className={styles.imgContainer}>
@@ -258,7 +269,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-
+      <ScrollToTopButton />
     </div >
   );
 };
