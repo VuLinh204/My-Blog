@@ -52,37 +52,6 @@
   object-fit: contain;
 }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .boxes {
-    flex-direction: column;
-    gap: 50px;
-  }
-}
-
-.contentAbout {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffefe3;
-  flex-wrap: wrap;
-  border-radius: 0.75rem;
-  margin-bottom: 6rem;
-  padding: 0 20px;
-}
-
-.about {
-  display: flex;
-  align-items: center;
-  margin-top: 2px;
-  margin-bottom: 10px;
-}
-
 .register {
   background-image: linear-gradient(to bottom, #fbbf24, #d97706);
   color: #fff;
@@ -106,13 +75,95 @@
   background-image: linear-gradient(to top, #fbbf24, #d97706);
 }
 
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1;
+    text-align: center;
+  }
+
+  .textContainer {
+    text-align: center;
+  }
+
+  .boxes {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 475px) {
+  .container {
+    width: 633px !important;
+  }
+}
+
+.contentAbout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffefe3;
+  border-radius: 0.75rem;
+  margin-bottom: 6rem;
+  padding: 0 2rem;
+}
+
+.number {
+  margin: 0;
+  padding: 1rem 2rem;
+  background-color: #fff;
+}
 
 .grid {
   display: flex;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
+
+.statscol {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.spacing {
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  font-size: 1.25rem;
+  /* Adjust font size relative to base */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contentAbout {
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .number {
+    margin-top: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
 
 .spacing {
   margin-top: 1rem;
@@ -165,12 +216,6 @@
   font-size: 20px;
 }
 
-
-.number {
-  margin: 50px;
-  padding: 5px 30px;
-  background-color: #fff;
-}
 
 .btn3d {
   width: 150px;

@@ -9,6 +9,7 @@ import CountUp from "react-countup";
 import styles from "./about.module.css";
 import "aos/dist/aos.css";
 import ScrollToTopButton from '@/components/ScrollToTopButton/ScrollToTopButton';
+import AboutText from '@/components/aboutText/aboutText';
 
 const AboutPage = () => {
 
@@ -80,10 +81,10 @@ const AboutPage = () => {
           </div>
         </div>
         <div className={styles.number}>
-          <h1 className="mt-8 pt-6 pl-8 text-3xl xl:text-4xl text-primary_orange-0 3rem 3rem ">
+          <h1>
             GSSoC 2024
           </h1>
-          <div className="pl-8 text-2xl text-primary_orange-0 1.5rem 2rem ">
+          <div>
             {" "}
             by the numbers
           </div>
@@ -208,67 +209,8 @@ const AboutPage = () => {
         </div>
       </div>
 
+      <AboutText />
 
-      <div
-        data-aos="flip-left"
-        data-aos-duration="1500"
-        className={styles.box}
-      >
-        <div
-          className={styles.custom}
-        >
-          <div className={styles.item}>
-            <h3>Start your Journey</h3>
-            <p>Participating in GSSoC’24 is an opportunity to upgrade your Github profile. Enrich yourselves to learn, explore, improve, enhance, build connections and become a team player to nourish your skills and personality. Don’t miss a chance to get well-versed with Open-Source and essential tools like Git and Github under the supervision of excellent mentors.</p>
-            <button className={styles.btn3d}>
-              <a href="#">
-                <span className={styles.top}>BUTTON</span>
-                <span className={styles.front}>BUTTON</span>
-              </a>
-            </button>
-          </div>
-          <div className={styles.item}>
-            <h3>Start your Journey</h3>
-            <p>Participating in GSSoC’24 is an opportunity to upgrade your Github profile. Enrich yourselves to learn, explore, improve, enhance, build connections and become a team player to nourish your skills and personality. Don’t miss a chance to get well-versed with Open-Source and essential tools like Git and Github under the supervision of excellent mentors.</p>
-            <button className={styles.btn3d}>
-              <a href="#">
-                <span className={styles.top}>BUTTON</span>
-                <span className={styles.front}>BUTTON</span>
-              </a>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        data-aos="flip-right"
-        data-aos-duration="1500"
-        className="   mx-auto"
-      >
-        <div
-          className={styles.custom}
-        >
-          <div className={styles.item}>
-            <h3>Start your Journey</h3>
-            <p>Participating in GSSoC’24 is an opportunity to upgrade your Github profile. Enrich yourselves to learn, explore, improve, enhance, build connections and become a team player to nourish your skills and personality. Don’t miss a chance to get well-versed with Open-Source and essential tools like Git and Github under the supervision of excellent mentors.</p>
-            <button className={styles.btn3d}>
-              <a href="#">
-                <span className={styles.top}>BUTTON</span>
-                <span className={styles.front}>BUTTON</span>
-              </a>
-            </button>
-          </div>
-          <div className={styles.item}>
-            <h3>Start your Journey</h3>
-            <p>Participating in GSSoC’24 is an opportunity to upgrade your Github profile. Enrich yourselves to learn, explore, improve, enhance, build connections and become a team player to nourish your skills and personality. Don’t miss a chance to get well-versed with Open-Source and essential tools like Git and Github under the supervision of excellent mentors.</p>
-            <button className={styles.btn3d}>
-              <a href="#">
-                <span className={styles.top}>BUTTON</span>
-                <span className={styles.front}>BUTTON</span>
-              </a>
-            </button>
-          </div>
-        </div>
-      </div>
       <ScrollToTopButton />
     </div >
   );

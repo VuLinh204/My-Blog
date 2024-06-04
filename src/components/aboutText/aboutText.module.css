@@ -1,0 +1,110 @@
+.about {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    margin-bottom: 70px;
+}
+
+.spacing {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.text {
+    font-size: 1.875rem;
+}
+
+.box {
+    margin-bottom: 100px;
+}
+
+.custom {
+    display: flex;
+    column-gap: 100px;
+    justify-content: between;
+    justify-content: space-between;
+    justify-content: stretch;
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-left: -4px;
+    margin-right: -4px;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border: 1px solid rgb(239, 234, 234);
+    padding: 0 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: #ffefe3;
+    box-shadow: 0 0 10px black;
+}
+
+.item p {
+    color: #000;
+    font-size: 20px;
+}
+
+
+.btn3d {
+    width: 150px;
+    height: 50px;
+    perspective: 800px;
+    position: relative;
+}
+
+.btn3d a {
+    transform-style: preserve-3d;
+    display: block;
+    position: absolute;
+    inset: 0;
+    perspective: 800px;
+    transition: 1s;
+}
+
+.btn3d a .top {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e3d0d0;
+    background: #ffefe3;
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+    font-weight: 700;
+}
+
+.btn3d a .front {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    color: #f0dede;
+    transform: translateZ(25px);
+    font-weight: 700;
+}
+
+.btn3d:hover a {
+    transform: rotateX(-90deg);
+}
+
+@media (max-width: 768px) {
+    .custom {
+        flex-direction: column;
+    }
+
+    .item {
+        margin-bottom: 70px;
+    }
+
+    .about {
+        margin: 0;
+    }
+}
