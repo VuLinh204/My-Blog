@@ -51,6 +51,32 @@
     animation: slideUp 0.4s 0.6s ease-out forwards, fadeInOverlay 0.3s 0.6s ease-out forwards;
 }
 
+.underlineEffect {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(90deg, #ff7f50, #ff4500, #ff4500, #ff7f50);
+    background-size: 200% 100%;
+    animation: slideIn 2s infinite;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-10%);
+        background: linear-gradient(90deg, #FF6B6B, #FF4500, #FF6347, #FF4500, #FF7F50);
+    }
+    50% {
+        transform: translateX(10%);
+        background: linear-gradient(90deg, #FF6B6B, #FF6600, #FF9933, #FFCC33, #FFB347);
+    }
+    100% {
+        transform: translateX(-10%);
+        background: linear-gradient(90deg, #FF6B6B, #FF4500, #FF6347, #FF4500, #FF7F50);
+    }
+}
+
 @keyframes slideDown {
     0% {
         top: -100%;
@@ -80,11 +106,11 @@
 
 @keyframes slideUp {
     0% {
-      opacity: 0;
+        opacity: 0;
         top: 0;
     }
     100% {
-      opacity: 1;
+        opacity: 1;
         top: 100%;
     }
 }

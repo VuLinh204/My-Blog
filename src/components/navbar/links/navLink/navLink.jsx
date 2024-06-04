@@ -28,6 +28,7 @@ const NavLink = ({ item }) => {
                     <div className={styles.overlayEnd}></div>
                 </>
             )}
+            {pathName === item.path && <div className={styles.underlineEffect}></div>}
         </div>
     );
 };
