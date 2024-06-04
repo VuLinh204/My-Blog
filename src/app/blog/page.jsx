@@ -4,6 +4,7 @@ import { getPosts } from '@/lib/data';
 import Slider from '@/components/slider/slider';
 import React from 'react';
 import ScrollEffect from '@/components/scrollEffect/scrollEffect';
+import ScrollToTopButton from '@/components/ScrollToTopButton/ScrollToTopButton';
 
 const BlogPage = async () => {
     const posts = await getPosts();
@@ -28,6 +29,7 @@ const BlogPage = async () => {
             <div className={styles.slider}>
                 <Slider />
             </div>
+            <ScrollToTopButton />
         </div>
     );
 };
