@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 import ScrollToTopButton from '@/components/ScrollToTopButton/ScrollToTopButton';
 import AboutText from '@/components/aboutText/aboutText';
 
+
 const AboutPage = () => {
 
   useEffect(() => {
@@ -43,8 +44,8 @@ const AboutPage = () => {
               </button>
             </a>
           </div>
-        </div>
 
+        </div>
         <div className={styles.imgContainer}>
           <div data-aos="fade-down" className="hero__image hidden lg:block">
             <Tilt

@@ -116,17 +116,13 @@
 }
 
 .number {
-  margin: 0;
-  padding: 1rem 2rem;
   background-color: #fff;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffefe3;
   flex-wrap: wrap;
   border-radius: 0.75rem;
-  margin-bottom: 6rem;
-  padding: 0 20px;
+  padding: 40px;
 }
 
 .grid {
