@@ -1,0 +1,61 @@
+.contactButton {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    display: block;
+    right: 35px;
+    bottom: 100px;
+    z-index: 100;
+    text-align: center;
+    line-height: 80px;
+    text-decoration: none;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 15px;
+
+}
+
+.contactButton::before,
+.contactButton::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-color: #007BFF;
+    border-radius: 50%;
+    animation: glow 2s infinite linear;
+    box-shadow: 0 0 10px #66BBFF;
+}
+
+.contactButton:active {
+    transform: translateY(10px);
+    animation: click 2s;
+}
+
+.contactButton::after {
+    animation-delay: 0.5s;
+}
+
+@keyframes glow {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes click {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+}

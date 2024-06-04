@@ -4,7 +4,7 @@ import { getPosts } from '@/lib/data';
 import Slider from '@/components/slider/slider';
 import React from 'react';
 import ScrollEffect from '@/components/scrollEffect/scrollEffect';
-import ScrollToTopButton from '@/components/ScrollToTopButton/ScrollToTopButton';
+import ScrollToTopButton from '@/components/scrollToTopButton/scrollToTopButton';
 
 const BlogPage = async () => {
     const posts = await getPosts();

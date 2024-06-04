@@ -7,7 +7,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
 }
 
 .subtitle {
@@ -52,6 +52,21 @@
   object-fit: contain;
 }
 
+.register {
+  background-image: linear-gradient(to bottom, #fbbf24, #d97706);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  transition: all 0.5s;
+
+}
+
+.register:hover {
+  background-image: linear-gradient(to top, #fbbf24, #d97706);
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -75,37 +90,6 @@
   margin-bottom: 6rem;
   padding: 0 20px;
 }
-
-.about {
-  display: flex;
-  align-items: center;
-  margin-top: 2px;
-  margin-bottom: 10px;
-}
-
-.register {
-  background-image: linear-gradient(to bottom, #fbbf24, #d97706);
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.75rem 1rem;
-  border-radius: 0.75rem;
-  transition: all 0.5s;
-
-}
-
-.about a {
-  transition: all 1.5s;
-}
-
-.about a:hover {
-  transform: scale(1.2);
-}
-
-.register:hover {
-  background-image: linear-gradient(to top, #fbbf24, #d97706);
-}
-
 
 .grid {
   display: flex;
@@ -194,11 +178,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #e3d0d0;
-  background: #ffefe3;
-  color: #000;
+  border: 1px solid #ffefe3;
+  border-radius: 5px;
+  background: var(--bgSoft);
+  color: var(--text);
   transform: rotateX(90deg) translateZ(25px);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .btn3d a .front {
@@ -207,7 +192,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: red;
+  background: var(--btn);
+  border-radius: 5px;
   color: #f0dede;
   transform: translateZ(25px);
   font-weight: 700;
@@ -215,4 +201,8 @@
 
 .btn3d:hover a {
   transform: rotateX(-90deg);
+}
+
+.scrollToTopButton{
+  display: flex;
 }
