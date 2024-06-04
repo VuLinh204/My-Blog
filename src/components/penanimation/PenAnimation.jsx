@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import styles from "./PenAnimation.module.css";
+import styles from "./penAnimation.module.css";
 
 const PenAnimation = () => {
   return (
@@ -13,7 +13,7 @@ const PenAnimation = () => {
           alt="Pen Icon"
           className={styles.penIcon}
         />
-          <div className={styles.textOverlay}>Create a blog in your own way.</div>
+        <div className={styles.textOverlay}>Create a blog in your own way.</div>
       </div>
     </div>
   );

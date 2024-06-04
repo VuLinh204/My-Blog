@@ -16,7 +16,7 @@ const ContactPage = () => {
         <form action="" className={styles.form}>
           <input type="text" placeholder="Name and Surname" required minLength={3} maxLength={150} />
           <input type="email" placeholder="Email Address" required />
-          <input type="number" placeholder="Phone Number (Optional)" required />
+          <input type="text" placeholder="Phone Number (Optional)" required />
           <textarea
             name=""
             id=""

@@ -6,6 +6,7 @@ npm install react-type-animation
 
 npm install aos
 
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/react-fontawesome
 
 ##############################################
 Tiêu đề: So sánh giữa Next.js 14 và Next.js 13

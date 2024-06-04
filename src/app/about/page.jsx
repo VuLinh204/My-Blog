@@ -21,11 +21,11 @@ const AboutPage = () => {
     <div>
       <div className={styles.container}>
         <div className={styles.textContainer}>
-          <h2 className={styles.subtitle}>About Agency</h2>
-          <h1 className={styles.title}>
+          <h2 data-aos="zoom-out-down" className={styles.subtitle}>About Agency</h2>
+          <h1 data-aos="zoom-out-down" className={styles.title}>
             We create digital ideas that are bigger, bolder, braver and better.
           </h1>
-          <p className={styles.desc}>
+          <p data-aos="zoom-out-down" className={styles.desc}>
             We create digital ideas that are bigger, bolder, braver and better. We
             believe in good ideas, flexibility, and precision. We’re the world’s
             best consulting & finance solution provider. Wide range of web and software development services.

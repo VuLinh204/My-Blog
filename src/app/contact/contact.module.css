@@ -34,6 +34,14 @@
     color: var(--text);
 }
 
+.form textarea:focus{
+    animation: rotateShadow 2s infinite linear;
+}
+
+.form input:focus{
+    animation: rotateShadow 2s infinite linear;
+}
+
 .form button {
     padding: 20px;
     background-color: var(--btn);
@@ -42,6 +50,28 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@keyframes rotateShadow {
+    0% {
+        box-shadow: -2px -2px 8px 1px #ffbb00, 2px 2px 8px 1px #8162f0;
+    }
+
+    25% {
+        box-shadow: -2px 2px 8px 1px #eccb99, 2px -2px 8px 1px #3700ff;
+    }
+
+    50% {
+        box-shadow: 2px 2px 8px 1px #ffbb00, -2px -2px 8px 1px #8162f0;
+    }
+
+    75% {
+        box-shadow: 2px -2px 8px 1px #eccb99, -2px 2px 8px 1px #3700ff;
+    }
+
+    100% {
+        box-shadow: -2px -2px 8px 1px #ffbb00, 2px 2px 8px 1px #8162f0;
+    }
 }
 
 @media (max-width: 768px) {

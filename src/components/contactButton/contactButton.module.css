@@ -2,7 +2,7 @@
     position: fixed;
     width: 80px;
     height: 80px;
-    background-color: #007BFF;
+    background-color: #74a6db;
     border-radius: 50%;
     display: block;
     right: 35px;
@@ -14,7 +14,7 @@
     margin: 0 auto;
     color: #fff;
     font-size: 15px;
-
+    border: none;
 }
 
 .contactButton::before,
@@ -23,7 +23,7 @@
     position: absolute;
     z-index: -1;
     inset: 0;
-    background-color: #007BFF;
+    background-color: #74a6db;
     border-radius: 50%;
     animation: glow 2s infinite linear;
     box-shadow: 0 0 10px #66BBFF;
@@ -37,6 +37,22 @@
 .contactButton::after {
     animation-delay: 0.5s;
 }
+
+.contactButton{
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 @keyframes glow {
     from {

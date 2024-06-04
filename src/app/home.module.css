@@ -28,17 +28,41 @@
   gap: 20px;
 }
 
-.button{
-  padding: 20px;
-  min-width: 120px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
+.button {
+  padding: 0.8em 1.8em;
+  border: 2px solid var(--text);
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: var(--text);
 }
 
-.button:first-child{
-  background-color: var(--btn);
-  color: var(--white);
+.button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: var(--text);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.button:hover::before {
+  width: 105%;
+}
+
+.button:hover {
+  color: #111;
 }
 
 .penAnimation{
@@ -58,7 +82,40 @@
   animation: slideInFromLeft 1s ease-out;
 }
 
+.desc,
+.buttons,
+.brandButtons,
+.penAnimation {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
 
+.desc {
+  animation-delay: 0.2s; 
+}
+
+.buttons {
+  animation-delay: 0.4s; 
+}
+
+.brandButtons {
+  animation-delay: 0.8s; 
+}
+
+.penAnimation {
+  animation-delay: 1s; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @media (max-width: 1024px) {
   .container {

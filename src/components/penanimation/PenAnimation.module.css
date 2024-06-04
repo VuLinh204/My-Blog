@@ -1,5 +1,4 @@
 /* PenOnPaperAnimation.module.css */
-
 .paper {
     position: relative;
     width: 25em;
@@ -19,24 +18,36 @@
     margin-top: 9em;
     width: 50px;
     height: auto;
-    animation: penWrite 4s cubic-bezier(0,1,1,-0.01) infinite;
+    animation: penWrite 4s linear infinite;
 }
 
 @keyframes penWrite {
     0% {
-        transform: translateY(-10px) translateX(-765%);
+        transform: translateY(-8px) translateX(-765%);
+    }
+    15% {
+        transform: translateY(8px) translateX(-715%);
     }
     25% {
-        transform: translateY(10px) translateX(-645%);
+        transform: translateY(-8px) translateX(-665%);
+    }
+    35% {
+        transform: translateY(8px) translateX(-615%);
     }
     50% {
-        transform: translateY(-10px) translateX(-515%);
+        transform: translateY(-8px) translateX(-565%);
+    }
+    65% {
+        transform: translateY(8px) translateX(-515%);
     }
      75% {  
-        transform: translateY(10px) translateX(-390%);
+        transform: translateY(-8px) translateX(-465%);
+    }
+    85% {
+        transform: translateY(8px) translateX(-385%);
     }
     100% {
-        transform: translateY(-10px) translateX(-235%);
+        transform: translateY(0) translateX(-235%);
     }
 }
 

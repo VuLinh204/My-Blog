@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./home.module.css";
 import ContactButton from "@/components/contactButton/contactButton";
-import PenAnimation from "@/components/penAnimation/PenAnimation";
+import PenAnimation from "@/components/penAnimation/penAnimation";
 import TechnologyIntroduction from "@/components/technologyIntroduction/technologyIntroduction";
 import BrandButtons from "@/components/brandButtons/brandButtons";
 
