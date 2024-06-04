@@ -1,7 +1,7 @@
-/* Container styles */
 .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
     scrollbar-width: thin;
     scrollbar-color: #007bff #f1f1f1;
@@ -21,12 +21,10 @@
     border: 3px solid #f1f1f1;
 }
 
-/* Post card styles */
 .post {
     width: 30%;
 }
 
-/* Scroll icon styles */
 .icon_scroll {
     width: 100px;
     height: 100px;
@@ -51,13 +49,11 @@
     }
 }
 
-/* Slider styles */
 .slider {
     width: 100%;
     margin-top: 20px;
 }
 
-/* Responsive styles */
 @media screen and (max-width: 1280px) {
     .post {
         width: 45%;

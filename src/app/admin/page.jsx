@@ -6,6 +6,7 @@ import AdminUsers from '@/components/adminUsers/adminUsers';
 import AdminUserForm from '@/components/adminUserForm/adminUserForm';
 import { auth } from '@/lib/auth';
 import ScrollToTopButton from '@/components/scrollToTopButton/scrollToTopButton';
+import Spinner from '@/components/spinner/spinner';
 
 const AdminPage = async () => {
     const session = await auth();
@@ -14,7 +15,7 @@ const AdminPage = async () => {
         <div className={styles.container}>
             <div className={styles.row}>
                 <div className={styles.col}>
-                    <Suspense fallback={<div>Loading...</div>}>
+                    <Suspense fallback={<Spinner />}>
                         <AdminPosts />
                     </Suspense>
                 </div>
@@ -24,7 +25,7 @@ const AdminPage = async () => {
             </div>
             <div className={styles.row}>
                 <div className={styles.col}>
-                    <Suspense fallback={<div>Loading...</div>}>
+                    <Suspense fallback={<Spinner />}>
                         <AdminUsers />
                     </Suspense>
                 </div>

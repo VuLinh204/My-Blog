@@ -10,16 +10,22 @@ const BlogPage = () => {
     const [posts, setPosts] = useState([]);
     const [page, setPage] = useState(0);
     const [loading, setLoading] = useState(true);
+    const [hasMorePosts, setHasMorePosts] = useState(true);
+
     useEffect(() => {
         fetch(`/api/blog?page=${page}`, { method: 'GET' })
             .then((res) => res.json())
             .then((res) => {
-                console.log('res', res);
-                setPosts(res);
+                if (res.length % 6 == 0) {
+                    setPosts(res);
+                    var newRes = +res.length;
+                } else if (newRes % 6 != 0) {
+                    setPosts(res);
+                    setHasMorePosts(false);
+                }
             })
             .finally(() => loading && setLoading(false));
     }, [page, loading]);
-    console.log('posts state', posts);
     if (loading) {
         return (
             <div style={{ height: 300, width: '100%', display: 'flex', justifyContent: 'center' }}>
@@ -46,10 +52,15 @@ const BlogPage = () => {
                     )}{' '}
                 </React.Fragment>
             ))}{' '}
-            <div className={styles.icon_scroll} onClick={() => setPage((prev) => prev + 1)}>
-                {' '}
-                <img src="/scroll-bottom.png" style={{ cursor: 'pointer' }} alt="scroll-bottom" />{' '}
-            </div>{' '}
+            {hasMorePosts && (
+                <div
+                    className={styles.icon_scroll}
+                    style={{ display: hasMorePosts ? 'block' : 'none' }}
+                    onClick={() => setPage((prev) => prev + 1)}
+                >
+                    <img src="/scroll-bottom.png" style={{ cursor: 'pointer' }} alt="scroll-bottom" />
+                </div>
+            )}
             <div className={styles.slider}>
                 {' '}
                 <Slider />{' '}
