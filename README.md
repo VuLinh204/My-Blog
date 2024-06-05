@@ -6,6 +6,10 @@ npm install react-type-animation
 
 npm install aos
 
+npm install simplebar
+
+npm install framer-motion
+
 npm install @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/react-fontawesome
 
 ##############################################

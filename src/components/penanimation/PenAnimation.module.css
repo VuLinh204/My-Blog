@@ -18,7 +18,7 @@
     margin-top: 9em;
     width: 50px;
     height: auto;
-    animation: penWrite 5s linear infinite;
+    animation: penWrite 6s linear infinite;
 }
 
 .textOverlay {
@@ -28,7 +28,7 @@
     white-space: nowrap;
     overflow: hidden;
     margin-right: 3em;
-    animation: textMove 5s 0.2s ease-in-out infinite;
+    animation: textMove 5s 0.4s ease-in-out infinite;
 }
 
 @keyframes textMove {
@@ -61,39 +61,39 @@
 
 @keyframes penWrite {
     0% {
-        transform: translateY(-8px) translateX(-38em);
+        transform: translateY(-8px) translateX(-28em);
     }
 
     15% {
-        transform: translateY(8px) translateX(-34em);
+        transform: translateY(8px) translateX(-25em);
     }
 
     25% {
-        transform: translateY(-8px) translateX(-30em);
-    }
-
-    35% {
-        transform: translateY(8px) translateX(-26em);
-    }
-
-    50% {
         transform: translateY(-8px) translateX(-22em);
     }
 
+    35% {
+        transform: translateY(8px) translateX(-19em);
+    }
+
+    50% {
+        transform: translateY(-8px) translateX(-16em);
+    }
+
     65% {
-        transform: translateY(8px) translateX(-18em);
+        transform: translateY(8px) translateX(-13em);
     }
 
     75% {
-        transform: translateY(-8px) translateX(-14em);
+        transform: translateY(-8px) translateX(-12em);
     }
 
     85% {
-        transform: translateY(2px) translateX(-12em);
+        transform: translateY(0) translateX(-6em);
     }
 
     100% {
-        transform: translateY(0) translateX(-11em);
+        transform: translateY(0) translateX(-2em);
     }
 }
 

@@ -54,7 +54,7 @@ const AboutPage = () => {
               <div className="img__container">
                 <img
                   src=
-                  "https://gssoc.girlscript.tech/Hero_Image_Lite_Theme.svg"
+                  "/Hero_Image.svg"
                   alt="hero-image"
                 />
               </div>
