@@ -13,6 +13,17 @@ export const getPosts = async (limit = 6) => {
     }
 };
 
+export const getAdminPosts = async () => {
+    try {
+        connectToDb();
+        const posts = await Post.find();
+        return posts;
+    } catch (err) {
+        console.log(err);
+        throw new Error('Failed to fetch posts!');
+    }
+};
+
 export const getPost = async (slug) => {
     try {
         connectToDb();

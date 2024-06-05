@@ -1,164 +1,164 @@
 .container {
-  display: flex;
-  gap: 100px;
+    display: flex;
+    gap: 100px;
 }
 
 .textContainer {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .subtitle {
-  color: var(--btn)
+    color: var(--btn);
 }
 
 .title {
-  font-size: 54px;
+    font-size: 54px;
 }
 
 .desc {
-  font-size: 20px;
-  font-weight: 300;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .boxes {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .statscol {
-  margin-right: 120px;
+    margin-right: 120px;
 }
 
 .box {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .box h1 {
-  color: var(--btn);
+    color: var(--btn);
 }
 
 .imgContainer {
-  flex: 1;
-  position: relative;
+    flex: 1;
+    position: relative;
 }
 
 .img {
-  object-fit: contain;
+    object-fit: contain;
 }
 
 .register {
-  background-image: linear-gradient(to bottom, #fbbf24, #d97706);
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.75rem 1rem;
-  border-radius: 10px;
-  transition: all 0.5s;
- border: none;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #fbbf24, #d97706);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border: none;
 }
 
-
 .about a {
-  transition: all 1.5s;
+    transition: all 1.5s;
 }
 
 .about a:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .register:hover {
-  background-image: linear-gradient(to top, #fbbf24, #d97706);
+    background-image: linear-gradient(to top, #fbbf24, #d97706);
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
+    .container {
+        flex-direction: column;
 
-    gap: 1;
-    text-align: center;
-  }
+        gap: 1;
+        text-align: center;
+    }
 
-  .textContainer {
-    text-align: center;
-  }
+    .textContainer {
+        text-align: center;
+    }
 
-  .boxes {
-    flex-direction: column;
-    gap: 50px;
-  }
+    .boxes {
+        flex-direction: column;
+        gap: 50px;
+    }
 
-  .title {
-    font-size: 25px;
-  }
+    .title {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 475px) {
-  .container {
-    width: 633px !important;
-  }
+    .container {
+        width: 633px !important;
+    }
 }
 
 .contentAbout {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffefe3;
-  border-radius: 0.75rem;
-  margin-bottom: 6rem;
-  padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffefe3;
+    border-radius: 0.75rem;
+    margin-bottom: 6rem;
+    padding: 0 2rem;
 }
 
 .number {
-  background-color: #fff;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  border-radius: 0.75rem;
-  padding: 40px;
+    background-color: #fff;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 0.75rem;
+    padding: 40px;
 }
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .statscol {
-  flex: 1 1 auto;
-  text-align: center;
+    flex: 1 1 auto;
+    text-align: center;
 }
 
 .spacing {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .text {
-  font-size: 1.25rem;
-  /* Adjust font size relative to base */
+    font-size: 1.25rem;
+    /* Adjust font size relative to base */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .contentAbout {
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-  }
+    .contentAbout {
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+    }
 
-  .number {
-    margin-top: 1rem;
-  }
+    .number {
+        margin-top: 1rem;
+    }
 
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
